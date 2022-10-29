@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../Icons/logo-favicon.svg" type="image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img src="../Icons/burger_menu.svg" class="burger_menu">
+            <aside id="origin-aside">
+                <div class="logo-img-block">
+                    <img src="../Icons/logo.svg" >
+                </div>
+                <nav>
+                    <div class="navigation-block">
+                        <p>Navigation</p>
+                        <ul class="list">
+                            <li class="active" id="HomePage">Homepage</li>
+                            <li id="playlist-page">Playlist</li>
+                            <li id="settings_page">Settings</li>
+                        </ul>
+                    </div>
+                    <div class="playlist-block">
+                        <p>Playlists</p>
+                        <ul class="list">
+                            <li class="liked-songs-li" id="liked-songs-id">Liked songs<span>
+                                <img src="../Icons/love.svg" >
+                            </span></li>
+                            <li class="playlist-navbar"></li>
+                        </ul>
+                    </div>
+                    <div class="liked-songs">
+                        <p>Liked Songs</p>
+                        <ul class="list" id="likedList">
+                            <!-- <li><p>Stay</p> <span>3:53</span></li> -->
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+            <div class="aside-wrap">
+                <div class="aside">
+                    <div class="logo-img-block">
+                        <img src="../Icons/logo.svg" >
+                        <img src="../Icons/close.svg" class="close-menu">
+                    </div>
+                    <nav>
+                        <div class="navigation-block">
+                            <p>Navigation</p>
+                            <ul class="list">
+                                <li class="active" id="HomePage2">Homepage</li>
+                                <li id="playlist-page2">Playlist</li>
+                                <li id="settings_page2">Settings</li>
+                            </ul>
+                        </div>
+                        <div class="playlist-block">
+                            <p>Playlists</p>
+                            <ul class="list">
+                                <li class="liked-songs-li" id="liked-songs-id2">Liked songs<span>
+                                    <img src="../Icons/love.svg" >
+                                </span></li>
+                                <li class="playlist-navbar2"></li>
+                            </ul>
+                        </div>
+                        <p class="lkd-sngs">Liked Songs</p>
+                        <div class="liked-songs2">
+                            <ul class="list" id="likedList2">
+                                <!-- <li><p>Stay</p> <span>3:53</span></li> -->
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <main class="content">
+            <div class="content-box">
+                <header>
+                    <div class="header-box">
+                        <div class="left-header-inp">
+                            <label for="header-inp">
+                                <img src="../Icons/search.svg">
+                            </label>
+                            <input type="search" id="header-inp" placeholder="Search by name and artist">
+                            <div class="inp-list">
+                                <h1 class="search-results"></h1>
+                            </div>
+                        </div>
+                        <div class="user-info">
+                             <h3 class="user__name"></h3>
+                            <p class="user_status"></p> 
+                        </div>
+                    </div>
+                </header>
+                <div class="header2">
+                    <div class="header-box">
+                        <div class="left-header2">
+                            <img src="../Icons/logo.svg" height="50px">
+                            <h3 class="user__name2"></h3>
+                        </div>
+                        <div class="header-hat">
+                            <img src="../Icons/burger_menu.svg" height="30px" class="burger_menu2">
+                            <img src="../Icons/search2.svg" class="search-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-sarp-wrap">
+                    <div class="input-separately">
+                        <div class="left-header-inp2">
+                            <label for="new-inp">
+                                 <img src="../Icons/search.svg">
+                            </label>
+                            <input type="search" id="new-inp" class="new-inp2" placeholder="Search by name and artist">
+                            <div class="inp-list2">
+                                <h1 class="search-results"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-block">
+                    <div class="slider">
+                        <div class="slider-swiper-block">
+                            <div class="slider-text">
+                                <h1 class="premium-color-text" id="name-premium-text">Selena Gomez</h1>
+                                <h2>Vicio</h2>
+                                <p>3:53</p>
+                                <div class="swiper-arrows">
+                                    <div class="arrow-prew">
+                                        <img src="../Icons/arrow-left.svg" >
+                                    </div>
+                                    <div class="arrow-next arrow-next-premium">
+                                        <img src="../Icons/right_arrow_icon.svg" height="23px">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="../img/spotify-img-album.png" alt="Song img" class="slider-image">
+                        </div>
+                        </div>
+                        <div class="slider-swiper-block">
+                            <div class="slider-text">
+                                <h1 class="premium-color-text">Justin Bieber</h1>
+                                <h2>Stay</h2>
+                                <p>2:20</p>
+                                <div class="swiper-arrows">
+                                    <div class="arrow-prew">
+                                        <img src="../Icons/arrow-left.svg" >
+                                    </div>
+                                    <div class="arrow-next arrow-next-premium">
+                                        <img src="../Icons/right_arrow_icon.svg" height="23px">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="../img/justinbieber_stay.jpeg" alt="Song img" class="slider-image">
+                        </div>
+                        </div>
+                        <div class="slider-swiper-block">
+                            <div class="slider-text">
+                                <h1 class="premium-color-text">Miyagi feat Andy Panda</h1>
+                                <h2>Minor</h2>
+                                <p>3:03</p>
+                                <div class="swiper-arrows">
+                                    <div class="arrow-prew">
+                                        <img src="../Icons/arrow-left.svg" >
+                                    </div>
+                                    <div class="arrow-next arrow-next-premium">
+                                        <img src="../Icons/right_arrow_icon.svg" height="23px">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="../img/miyagi_andy.jpeg" alt="Song img" class="slider-image">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-content">
+                    <div class="random-songs random-songs-reload">
+                        <h3>10 RANDOM SONGS</h3>
+                    </div>
+                <div class="liked-songs liked-songs-reload">
+                    <h3>LIKED TRACKS</h3>
+                </div>
+                <div class="resently-listened-songs resently-listened-reload">
+                    <h3>RECENTLY LISTENED</h3>
+                </div>
+            </div>
+            <!-- СТРАНИЦА ПЛЕЙЛИСТОВ,ЧТОБЫ БЫЛО УДОБНЕЕ ОРИЕНТИРОВАТЬСЯ ПО КОДУ ИСПОЛЬЗУЮТСЯ КОММЕНТАРИИ -->
+            <div class="playlist-content">
+                <div class="random-songs2 liked-songs-reload2">
+                    <h3>LIKED TRACKS</h3>
+                </div>
+                <div class="random-songs2 playlist-reload">
+                    <h3 class="pl-name"></h3>
+                </div>
+            </div>
+            <!-- СТРАНИЦА НАСТРОЕК,ЧТОБЫ БЫЛО УДОБНЕЕ ОРИЕНТИРОВАТЬСЯ ПО КОДУ ИСПОЛЬЗУЮТСЯ КОММЕНТАРИИ -->
+            <div class="settings-page">
+                <h1 class="settings-text">SETTINGS</h1>
+                <div class="name-change-input">
+                    <form>
+                       <div>
+                        <label for="name">Your Name</label>
+                       <input type="text" class="change-name" id="name">
+                       </div>
+                       <div>
+                        <label >Free or Premium</label>
+                       <div class="dot_plus_text">
+                        <div class="premium-switch">
+                            <div class="dot-slider">
+                            </div>
+                           </div>
+                           <p>Premium User</p>
+                       </div>
+                       </div>
+                       <div class="not_more">
+                        <p>No more settings</p>
+                        <img src="../Icons/cry.svg">
+                       </div>
+                     <button class="save-btn">
+                        Save
+                     </button>
+                    </form>
+                </div>
+            </div>
+            <!-- LIKED PAGE -->
+            <div class="liked-page">
+                <h3>LIKED SONGS</h3>
+                   <div id="liked-songs-page-block"></div>
+            </div>
+            <div class="mobile-player-version">
+                <div class="small-player-box">
+                    <div class="top-img">
+                        <img src="../img/all_i_want.jpeg" class="mini-player-img">
+                    </div>
+                    <div class="name-react-block">
+                        <div class="left-name-song">
+                            <h1 class="singers-names">The weekend</h1>
+                            <p class="song-text-mini-player">Starboy</p>
+                        </div>
+                        <div class="right-song-reaction">
+                            <img src="../Icons/liked.svg" class="liked-img-mini">
+                        </div>
+                    </div>
+                    <div class="small-mobile-player">
+                        <img src="../Icons/repeat.svg" class="repeat-mini">
+                        <img src="../Icons/repeated.svg" class="repeated-mini repeated-track">
+                        <div class="btns222">
+                            <img src="../Icons/track-next.svg" class="prev-mini">
+                            <div class="roll">
+                                <img src="../Icons/play.svg" class="play-mini">
+                                <img src="../Icons/pause.svg" height="30px" class="pause-mini noneall">
+                            </div>
+                            <img src="../Icons/track-prev.svg" class="next-mini">
+                        </div>
+                        <img src="../Icons/random.svg" class="random-mini">  
+                        <img src="../Icons/random-active.svg" class="random-mini-active act">  
+                        <audio class="audio-mini"></audio>       
+                    </div>
+                    <div class="progress-cont22">
+                        <div class="progress-bar2"></div>
+                    </div>
+                    <button class="mobile-player-btn">Go back</button>
+                </div>
+            </div>
+            <!-- PLAYER -->
+            <div class="player">    
+                <div class="player-box">
+                    <div class="left-songs-name">
+                        <h2 class="player-song-name">The Weekend</h2>
+                        <p class="player-singer-name">Starboy</p>
+                    </div>
+                    <div class="right-player">
+                        <div class="player-btns">
+                            <div class="btns">
+                                <img src="../Icons/repeat.svg" class="repeat-track">
+                                <img src="../Icons/repeated.svg" class="repeated-track">
+                                <img src="../Icons/track-next.svg" class="prev-track">
+                                <div class="play-cont">
+                                    <img src="../Icons/play.svg" class="music-play">
+                                    <img src="../Icons/pause.svg" class="pause-music">
+                                </div>
+                                <img src="../Icons/track-prev.svg" class="next-track">
+                                <img src="../Icons/random.svg" class="random-img">
+                                <img src="../Icons/random-active.svg" class="random-active act">
+                            </div>
+                        </div>
+                        <div class="progress-box">
+                            <p class="start">0:00</p>
+                            <div class="progress-container">
+                                <div class="progress"></div>
+                            </div>
+                            <p class="end">0:00</p>
+                        </div>
+                    </div>
+                    <div class="last-player"></div>
+                    <audio src="../audio/Cozy Little Christmas.mp3" class="audio"></audio>
+                </div>
+            </div>
+            <div class="playerPlaylist playerPlaylist2">
+                <div class="player-box-playlist">
+                    <div class="left-songs-name-playlist">
+                        <h2 class="player-song-name-playlist">The Weekend</h2>
+                        <p class="player-singer-name-playlist">Starboy</p>
+                    </div>
+                    <div class="right-player">
+                        <div class="player-btns-playlist">
+                            <div class="btns-playlist">
+                                <img src="../Icons/repeat.svg" class="repeat-track-playlist">
+                                <img src="../Icons/repeated.svg" class="repeated-track-playlist">
+                                <img src="../Icons/track-next.svg" class="prev-track-playlist">
+                                <div class="play-cont-playlist">
+                                    <img src="../Icons/play.svg" class="music-play-playlist">
+                                    <img src="../Icons/pause.svg" class="pause-music-playlist">
+                                </div>
+                                <img src="../Icons/track-prev.svg" class="next-track-playlist">
+                                <img src="../Icons/random.svg" class="random-img-playlist">
+                                <img src="../Icons/random-active.svg" class="random-active2 act">
+                            </div>
+                        </div>
+                        <div class="progress-box-playlist">
+                            <p class="start-playlist">0:00</p>
+                            <div class="progress-container-playlist">
+                                <div class="progress-playlist"></div>
+                            </div>
+                            <p class="end-playlist">0:00</p>
+                        </div>
+                    </div>
+                    <div class="last-player"></div>
+                    <audio src="../audio/Cozy Little Christmas.mp3" class="audio2"></audio>
+                </div>
+            </div>
+            <div class="modal-playlists-window_container">
+                <div class="modal-playlists-window">
+                    <img src="../Icons/close.svg" class="close-window">
+                    <h1>ADD TO PLAYLIST</h1>
+                    <div class="cont-box"></div>
+                    <form name="playlist">
+                        <input type="text" class="playlistsName" placeholder="Name of playlist" name="name">
+                        <button class="addPlaylist">SAVE</button>
+                    </form>
+                    <p class="create-plailist">Создать новый плейлист</p>
+                </div>
+            </div>
+        </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script src="../Scripts/script.js"></script>
+</body>
+</html>
